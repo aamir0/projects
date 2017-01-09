@@ -9,10 +9,10 @@ A C# program that, given a corpus of text, writes a sentence to the command line
 
 ##KnightPhone
 A Java program that, given a number _n_. writes to the command line the number of _n_-digit phone numbers that a chess knight could dial.
-
+```
   1 2 3
   4 5 6
   7 8 9
     0
-
+```
 A chess knight is said to be able to dial numbers in an L-formation, so, for example, if the knight begins at _1_, it can jump to _6_ or _8_ as its next digit, forming two 2-digit numbers: _16_ and _18_. Then, from the _6_ and the _8_, it can jump to the next number to form 3-digit numbers.
