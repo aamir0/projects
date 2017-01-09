@@ -16,7 +16,7 @@ public class ExcerptGenerator
 	public static void Main()
 	{
 		// Read file
-        string strText = new WebClient().DownloadString("http://www.gutenberg.org/files/1342/1342-0.txt");
+        	string strText = new WebClient().DownloadString("http://www.gutenberg.org/files/1342/1342-0.txt");
 		
 		// Create trigrams
 		string[] strPunctuation = { ".", "!", "?" };
@@ -33,7 +33,7 @@ public class ExcerptGenerator
 				continue;
 			}
 			
-            // Map word pair (key) to third word
+            		// Map word pair (key) to third word
 			if (!dctTrigrams.Keys.Any(key => key[0] == strKey[0] && key[1] == strKey[1]))
 			{
 				dctTrigrams.Add(strKey, new List<string>(){ strNextWord });
